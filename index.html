@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+        <meta charset="utf-8">
+        <title>Hua Kuang's Newsite</title>
+        <link rel="stylesheet" href="indexhk.css">
+      </head>
+
+    <div class="container">
+      <p id="date"></p>
+      <script>
+        var d = new Date();
+        document.getElementById("date").innerHTML = d;
+      </script>
+
+    <body onload="rotateImages()">
+      
+      <h1>Hua Kuang Chinese Reading Room</h1>
+      <h2>華光中文閱览室</h2>
+      <nav>
+      <tr>
+        <td>
+          <a target=_blank href="home.html">Home</a>
+          <a target=_blank href="activities.html">Activities</a>
+          <a target=_blank href="classes.html">Classes</a>
+          <a target=_blank href="catalog.html">Catalog</a>
+          <a target=_blank href="reviews.html">Reviews</a>
+          <a target=_blank href="contact.html">Contact</a>
+
+        </td>
+      </tr>
+       </nav>
+        <main>
+        <section class="hkwrap">
+
+
+       <figure>
+          <script type="text/javascript">
+            var imgDir="./images/";
+            var imgNames = ["hk1.jpg", "hk2.jpg", "hk3.jpg", "hk4.jpg"];
+            var imgCount = 0;
+            function rotateImages() {
+              if(imgCount == imgNames.length){
+                imgCount = 0;}
+              document.getElementById("img").src = imgDir + imgNames[imgCount]; imgCount++;
+              setTimeout("rotateImages()", 1500);}
+          </script>
+
+          <div class="imgContainer">
+            <img id="img" src="./images/hk1.jpg" >
+          </div>
+          <figcaption>Hua Kuang Chinese Reading Room</figcaption>
+          </body>
+        </figure>
+        <article >
+          <h3>Hua Kuang<br> A Chinese Library in Palo Alto</h3>
+          <p>A place to <br> Read Browse Borrow Learn Socialize</p>
+        </article>
+
+        <section class="hkwrap">
+          <figure>
+            <img src="./images/hkcf27.jpg" alt="Culture">
+            <figcaption>Culture Fair</figcaption>
+          </figure>
+          <article >
+            <h2>Activities</h2>
+            <h3>Culture Fairs <br /> Guest Speakers <br /> Classes</h3>
+          </article>
+        </section>
+      </main>
+
+      <aside>
+        <section class="classes">
+          <h3>Classes</h3>
+          <a href="#">Chinese Painting</a>
+          <a href="#">Chinese Calligraphy</a>
+          <a href="#">U.S.Citizenship and ESL</a>
+          <a href="#">Children's Chinese Storytelling</a>
+          <a href="#">Knitting and Sewing</a><br /><br /><br />
+        </section>
+        <section class="catalog">
+          <h3>Catalog</h3>
+          <p>Collection of 15000 volumes of books<br />
+            Literature<br />
+            Classic and Contemporary<br />
+            Biography and History <br />
+            Art and History<br />
+            Health and Religion<br />
+            Children's Books<br /><br /><br /><br /><br />
+          </p>
+
+          </section>
+      </aside>
+      <footer>Copyright: Hua Kuang Chinese Reading Room 2018</footer>
+      </body>
+      </html>
+
+     </header>
