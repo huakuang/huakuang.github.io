@@ -1,98 +1,226 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-        <meta charset="utf-8">
-        <title>Hua Kuang's Newsite</title>
-        <link rel="stylesheet" href="index.css">
-      </head>
-
-    <div class="container">
-      <p id="date"></p>
-      <script>
-        var d = new Date();
-        document.getElementById("date").innerHTML = d;
-      </script>
-
-    <body onload="rotateImages()">
-
-      <h1>Hua Kuang Chinese Reading Room</h1>
-      <h2>華光中文閱览室</h2>
-      <nav>
-      <tr>
-        <td>
-          <a target=_blank href="home.html">Home</a>
-          <a target=_blank href="activities.html">Activities</a>
-          <a target=_blank href="classes.html">Classes</a>
-          <a target=_blank href="catalog.html">Catalog</a>
-          <a target=_blank href="reviews.html">Reviews</a>
-          <a target=_blank href="contact.html">Contact</a>
-
-        </td>
-      </tr>
-       </nav>
-        <main>
-        <section class="hkwrap">
-
-
-       <figure>
-          <script type="text/javascript">
-            var imgDir="./images/";
-            var imgNames = ["hk1.jpg", "hk2.jpg", "hk3.jpg", "hk4.jpg"];
-            var imgCount = 0;
-            function rotateImages() {
-              if(imgCount == imgNames.length){
-                imgCount = 0;}
-              document.getElementById("img").src = imgDir + imgNames[imgCount]; imgCount++;
-              setTimeout("rotateImages()", 1500);}
-          </script>
-
-          <div class="imgContainer">
-            <img id="img" src="./images/hk1.jpg" >
-          </div>
-          <figcaption>Hua Kuang Chinese Reading Room</figcaption>
-          </body>
-        </figure>
-        <article >
-          <h3>Hua Kuang<br> A Chinese Library in Palo Alto</h3>
-          <p>A place to <br> Read Browse Borrow Learn Socialize</p>
-        </article>
-
-        <section class="hkwrap">
-          <figure>
-            <img src="./images/hkcf27.jpg" alt="Culture">
-            <figcaption>Culture Fair</figcaption>
-          </figure>
-          <article >
-            <h2>Activities</h2>
-            <h3>Culture Fairs <br /> Guest Speakers <br /> Classes</h3>
-          </article>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <title>Hua Kuang</title>
+        
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/huakuang%20logo.png" alt="Huakuang logo" class="logo">
+                    <ul class="main-nav">
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">Classes</a></li>
+                        <li><a href="#">Catalog</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="huakuang-header">
+                <h1>Hua Kuang Chinese Reading Room<br>華光中文閱览室</h1>
+            </div>
+                
+            <div class="hero-text-box">
+                <h1>Read books. <br>Meet friends.</h1>
+                <a class="btn btn-full" href="#">About us</a>
+                <a class="btn btn-ghost" href="#">I want to join</a>
+            </div>
+        </header>
+        
+        <section class="section-features">
+            <div class="row">
+                <h2>About us</h2>
+                <p class="long-copy">
+                    Hua Kuang Chinese Reading Room is exactly a Chinese library. It contains more than 13,000 volumes of Chinese books, numerous magazines and newspapers, as well as some Chinese-language DVDs.<br>
+                    There are books on ancient and modern philosophy; historical events of the overseas Chinese, minority races; biographies of famous Chinese; classical and contemporary literature, which are all open to be borrowed. Hua Kuang is also unique in the collection of hundreds of children reading material, and welcomes children of all ages. There are also English books on Chinese history and culture; Practical publications on medicine, gardening, cooking, etc.<br><br>
+                    華光中文閱覽室 本閱覽室收藏有關中華文化的書籍萬餘冊﹐數種雜誌和書刊及華語錄音帶數百集﹐以供讀者借閱。書籍包括古代經典及后人的研究成果﹐中華古代史書及現代史書﹐海外華僑歷史﹐邊疆民族歷史﹐古今名人傳記以及近代的中國人事及社會資料。那些欣賞中國通俗故事的錄音帶更會引起你很大的興趣。華光還收藏有數百本兒童讀物﹐歡迎各年齡的小朋友前來閱讀。 華光還有許多有關中外哲學的書籍﹐古今文學著作(如論著 、詩、詞、小說之類)﹐人們所喜愛得武俠小說也不少。還有一些藝術方面的書籍(如書法、繪畫、篆刻、音樂等)﹐以至中華醫藥方面的書籍亦頗豐富。此外還有許多有關中華文化論著的英文版本等。<br><br><br>
+                    Hua Kuang is providing programs and activities that are beneficial to the local communities. Among them are the following:
+                </p>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-6 box">
+                    <i class="ion-ios-people-outline icon-big"></i>
+                    <h3>Social</h3>
+                    <p>
+                        Social gatherings for senior Chinese, with numerous Chinese newspapers and periodicals provided for their enjoyment.<br><br>
+                        本室對耆英們提供了社交場所。備有若干報紙及雜誌以供閱讀。
+                    </p>
+                </div>
+                
+                <div class="col span-1-of-6 box">
+                    <i class="ion-ios-compose-outline icon-big"></i>
+                    <h3>Classes</h3>
+                    <p>
+                        Classes in Chinese calligraphy, Chinese painting, Eastern-Western flower arranging, piano keyboard, and knitting. <br><br>
+                        提供各類學習課程。有書法班, 國畫班，插花班，鋼琴鍵盤班和針織班
+                    </p>
+                </div>
+                
+                <div class="col span-1-of-6 box">
+                    <i class="ion-ios-chatbubble-outline icon-big"></i>
+                    <h3>Conversation</h3>
+                    <p>
+                        Chinese tutoring focusing on conversational practice which complements existing programs at adult education schools and community colleges. <br><br>
+                        中文輔導班注重會話溝通﹐以延續目前成人學校及社區學院課程的學習。
+                    </p>
+                </div>
+                
+                <div class="col span-1-of-6 box">
+                    <i class="ion-ios-world-outline icon-big"></i>
+                    <h3>English</h3>
+                    <p>
+                        Etiquette of American ways and conversational English for Chinese immigrants. <br><br>
+                        為中國移民介紹美國禮儀及增強英語會話。
+                    </p>
+                </div>
+                
+                <div class="col span-1-of-6 box">
+                    <i class="ion-ios-paper-outline icon-big"></i>
+                    <h3>Test Tutor</h3>
+                    <p>
+                        Tutoring of Chinese immigrants for citizenship examination, and English as Second Language (ESL). <br><br>
+                        協助中國移民準備公民考試。
+                    </p>
+                </div>
+                
+                <div class="col span-1-of-6 box">
+                    <i class="ion-ios-briefcase-outline icon-big"></i>
+                    <h3>Seminars</h3>
+                    <p>
+                        Seminars and special events on health, Chinese history and culture, and Hua Kuang celebrations. <br><br>
+                        不定期舉辦各類活動和研討會。有健康講座 ,國學研究和慶祝活動。
+                    </p>
+                </div>
+            </div>
         </section>
-      </main>
-
-      <aside>
-        <section class="classes">
-          <h3>Classes</h3>
-          <a href="#">Chinese Painting</a>
-          <a href="#">Chinese Calligraphy</a>
-          <a href="#">U.S.Citizenship and ESL</a>
-          <a href="#">Children's Chinese Storytelling</a>
-          <a href="#">Knitting and Sewing</a><br /><br /><br />
+        
+        <section class="section-meals">
+            <ul class="meals-showcase">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/normal/7.JPG" alt="normal7">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/normal/1.JPG" alt="normal1">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/normal/9.JPG" alt="normal9">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/normal/6.JPG" alt="normal6">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/normal/5.JPG" alt="normal5">
+                    </figure>
+                </li>
+            </ul>
+            
+            <ul class="meals-showcase">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf1.jpg" alt="hkcf1">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf2.jpg" alt="hkcf2">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf3.jpg" alt="hkcf3">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf4.jpg" alt="hkcf4">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf5.jpg" alt="hkcf5">
+                    </figure>
+                </li>
+            </ul>
+            
+            <ul class="meals-showcase">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf10.jpg" alt="hkcf10">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf8.jpg" alt="hkcf8">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf9.jpg" alt="hkcf9">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf11.jpg" alt="hkcf11">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf13.jpg" alt="hkcf13">
+                    </figure>
+                </li>
+            </ul>
+            
+            <ul class="meals-showcase">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf14.jpg" alt="hkcf14">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf15.jpg" alt="hkcf15">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf17.jpg" alt="hkcf17">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf18.jpg" alt="hkcf18">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/cf/hkcf19.jpg" alt="hkcf19">
+                    </figure>
+                </li>
+            </ul>
         </section>
-        <section class="catalog">
-          <h3>Catalog</h3>
-          <p>Collection of 15000 volumes of books<br />
-            Literature<br />
-            Classic and Contemporary<br />
-            Biography and History <br />
-            Art and History<br />
-            Health and Religion<br />
-            Children's Books<br /><br /><br /><br /><br />
-          </p>
+    
+    
+    </body>
+    
+</html>
 
-          </section>
-      </aside>
-      <footer>Copyright: Hua Kuang Chinese Reading Room 2018</footer>
-      </body>
-      </html>
 
-     </header>
